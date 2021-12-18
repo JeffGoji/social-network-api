@@ -4,7 +4,8 @@
   "description": "Social-Network-API back-end project using Express, Moment, MongoDB, and Mongoose.",
   "main": "index.js",
   "scripts": {
-    "test": "no test"
+    "test": "no test",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,17 @@
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^6.1.2"
-  }
+  },
+  "devDependencies": {},
+  "keywords": [
+    "Social-Network-API",
+    "back-end",
+    "project",
+    "using",
+    "Express",
+    "Moment",
+    "MongoDB",
+    "and",
+    "Mongoose."
+  ]
 }
