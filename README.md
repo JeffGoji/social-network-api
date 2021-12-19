@@ -37,8 +37,8 @@ or
 
 The routes to use are as follows:
 
-```
 User Action Routes:
+```
 Get all users: 
 GET
 http://localhost:3001/api/users/
@@ -51,12 +51,62 @@ Create a User:
 POST
 http://localhost:3001/api/users/
 
-Update a user:
+Update a User:
 PUT
+http://localhost:3001/api/users/:userId
+
+Delete a User:
+DELETE
 http://localhost:3001/api/users/:userId
 
 ```
 
+Thought Routes:
+```
+Get All Post:
+GET
+http://localhost:3001/api/thoughts/
+
+Get a Single Post:
+GET
+http://localhost:3001/api/thoughts/userId
+
+Create a new Thought:
+POST
+http://localhost:3001/api/thoughts/userId
+
+Update a thought:
+PUT
+http://localhost:3001/api/thoughts/userId
+
+Delete a Thought:
+DELETE
+http://localhost:3001/api/thoughts/userId
+```
+
+Friend Actions:
+```
+Add a Friend to a User's list:
+POST
+http://localhost:3001/api/users/:userId/friends/:friendId
+
+Delete a Friend from your User list:
+DELETE
+http://localhost:3001/api/users/:userId/friends/:friendId
+
+```
+
+User Reactions:
+```
+Create a Reaction:
+POST
+http://localhost:3001/api/thoughts/:thoughtId/reactions
+
+Delete a Reaction:
+DELETE
+http://localhost:3001/api/thoughts/:thoughtId/reactions
+
+```
 
 
 ## Usage:
