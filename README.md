@@ -1,6 +1,9 @@
 # Social Network API
+
 ## Licensing:
+
 [![license](https://img.shields.io/badge/license-MIT-blue)](https://shields.io)
+![Insomnia Routes](./img/pic1.jpg)
 
 ## Table of Contents
 
@@ -12,6 +15,7 @@
 - [Contact Info](#contact-info)
 
 ## Description:
+
 This is an API project for a social network web application that utilizes MongoDB, Express.js, and Mongoose. Users can post their thoughts, react to friend's thoughts, and can add or remove friends from their personal list.
 This is strictly a back-end project, so you will need to use Insomnia Core or Postman to access the routes.
 
@@ -21,25 +25,27 @@ This application uses node.js, express, MongoDB, Mongoose. To install necessary 
 <br />
 Clone the GitHub Repository
 <br />
+
 - npm install
 - npm install express
 - npm install mongoose
-<br />
-<br />
-Make sure you have Mongo DB installed. Open a terminal and start mongo by typing in "mongod" and that will start the server.
-<br />
-Run <strong>node server.js</strong> to create the server and be able to access in local host port.
-<br />Use either 
+  <br />
+  <br />
+  Make sure you have Mongo DB installed. Open a terminal and start mongo by typing in "mongod" and that will start the server.
+  <br />
+  Run <strong>node server.js</strong> to create the server and be able to access in local host port.
+  <br />Use either
 
 [Insomnia](https://insomnia.rest/download)
-or 
+or
 [Postman](https://www.postman.com/) to access the routes.
 
 The routes to use are as follows:
 
 User Action Routes:
+
 ```
-Get all users: 
+Get all users:
 GET
 http://localhost:3001/api/users/
 
@@ -62,6 +68,7 @@ http://localhost:3001/api/users/:userId
 ```
 
 Thought Routes:
+
 ```
 Get All Post:
 GET
@@ -85,6 +92,7 @@ http://localhost:3001/api/thoughts/userId
 ```
 
 Friend Actions:
+
 ```
 Add a Friend to a User's list:
 POST
@@ -97,6 +105,7 @@ http://localhost:3001/api/users/:userId/friends/:friendId
 ```
 
 User Reactions:
+
 ```
 Create a Reaction:
 POST
@@ -108,8 +117,8 @@ http://localhost:3001/api/thoughts/:thoughtId/reactions
 
 ```
 
-
 ## Usage:
+
 Use it as a test bed for a social media site's backend.
 
 ## License:
