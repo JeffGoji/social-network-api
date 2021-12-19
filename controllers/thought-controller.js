@@ -8,7 +8,7 @@ const thoughtController = {
       .then((dbUserData) => res.json(dbUserData))
       .catch((err) => {
         console.log(err);
-        res.status(500).json(err);
+        res.status(400).json(err);
       });
   },
 
@@ -59,7 +59,7 @@ const thoughtController = {
   updateThoughts({ params, body }, res) {
     Thoughts.findOneAndUpdate({ _id: params.id }, body, {
       new: true,
-      runValidators,
+      runValidators: true,
     })
       .populate({
         path: "reactions",
@@ -99,7 +99,7 @@ const thoughtController = {
   },
 
   //======== Find a thought and Delete it:
-  deleteThought({ params }, res) {
+  deleteThoughts({ params }, res) {
     Thoughts.findOneAndDelete({ _id: params.id })
       .then((dbThoughtData) => {
         if (!dbThoughtData) {
@@ -129,4 +129,4 @@ const thoughtController = {
   },
 };
 
-module.exposts = thoughtController;
+module.exports = thoughtController;
