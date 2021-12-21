@@ -119,7 +119,11 @@ http://localhost:3001/api/thoughts/:thoughtId/reactions
 
 ## Usage:
 
-Use it as a test bed for a social media site's backend.
+Here are the walk-through videos to demonstrate how to start the MongoDB server and Mongoose, and how to use the API routes:
+
+[Part 1 - User Actions and Friend Actions](https://youtu.be/XDvEREkNssE)
+
+[Part 2 - Thought Actions and Reacitons](https://youtu.be/XDvEREkNssE)
 
 ## License:
 
