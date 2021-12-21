@@ -123,7 +123,7 @@ Here are the walk-through videos to demonstrate how to start the MongoDB server 
 
 [Part 1 - User Actions and Friend Actions](https://youtu.be/XDvEREkNssE)
 
-[Part 2 - Thought Actions and Reacitons](https://youtu.be/XDvEREkNssE)
+[Part 2 - Thought Actions and Reactions](https://youtu.be/XDvEREkNssE)
 
 ## License:
 
